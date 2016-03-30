@@ -1,0 +1,6 @@
+src/macroset
+src/nimcache/
+src/nimcache/*
+tests/tests
+tests/nimcache/
+tests/nimcache/*
