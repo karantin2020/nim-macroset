@@ -40,7 +40,7 @@ before_script:
     - export PATH="nim-$BRANCH/bin${PATH:+:$PATH}"
 script:
     # Replace uppercase strings!
-    - nim c --cc:$CC --verbosity:0 -r tests/test_collection
+    - nim c --cc:$CC --verbosity:0 -r tests/tests
 cache:
   directories:
     - nim-master
