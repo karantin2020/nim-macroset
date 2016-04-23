@@ -1,6 +1,6 @@
-import osproc, unittest, ../src/macroset
+import os, osproc, unittest, ../src/macroset
 
-const path = "../src/macroset"
+const path = splitPath(currentSourcePath()).head & "/../src/macroset"
 
 test "can compile macroset":
   check execCmdEx("nim c " & path).exitCode == QuitSuccess
